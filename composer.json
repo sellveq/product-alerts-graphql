@@ -1,21 +1,50 @@
 {
-    "name": "scandipwa/product-alerts-graphql",
-    "description": "Magneto 2 Product alerts graphQl endpoints",
+    "name": "selveq/product-alerts-graphql",
+    "description": "Magento 2 Product Alerts GraphQl extension for ScandiPWA theme",
     "type": "magento2-module",
-    "require": {
-        "magento/module-product-alert": "100.4.*",
-        "magento/module-graph-ql": "100.4.*",
-        "magento/framework": "103.0.*"
-    },
+    "version": "2.0.0",
     "license": [
         "OSL-3.0"
     ],
+    "authors": [
+        {
+            "name": "Scandiweb",
+            "homepage": "https://scandiweb.com",
+            "role": "Original author"
+        },
+        {
+            "name": "Selveq",
+            "homepage": "https://selveq.com",
+            "role": "Maintainer"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/selveq/product-alerts-graphql/issues",
+        "source": "https://github.com/selveq/product-alerts-graphql"
+    },
+    "require": {
+        "php": "^8.3",
+        "magento/framework": "^103.0",
+        "magento/module-product-alert": "^100.4",
+        "magento/module-graph-ql": "^100.4",
+        "magento/module-catalog": "^104.0",
+        "magento/module-store": "^101.1"
+    },
+    "replace": {
+        "scandipwa/product-alerts-graphql": "*"
+    },
     "autoload": {
         "files": [
-            "registration.php"
+            "src/registration.php"
         ],
         "psr-4": {
-            "ScandiPWA\\ProductAlertsGraphQl\\": ""
+            "ScandiPWA\\ProductAlertsGraphQl\\": "src/"
         }
+    },
+    "archive": {
+        "exclude": [
+            "/.github",
+            "/.gitignore"
+        ]
     }
 }

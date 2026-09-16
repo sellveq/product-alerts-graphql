@@ -1,0 +1,14 @@
+##
+# ScandiPWA_ProductAlertsGraphQl
+#
+# @category    ScandiPWA
+# @package     ScandiPWA_ProductAlertsGraphQl
+# @copyright   Copyright © 2021 Scandiweb, Ltd (https://scandiweb.com)
+# @copyright   Modifications © Selveq. All rights reserved.
+# @license     OSL-3.0 (Open Software License ("OSL") v. 3.0)
+# See LICENSE for license details.
+##
+
+type Mutation {
+    productAlertSubscribe(productId: ID!, type: String!): Boolean @resolver(class: "ScandiPWA\\ProductAlertsGraphQl\\Model\\Resolver\\ProductAlertSubscribe") @doc(description:"Subscribe the current customer to a price-drop or back-in-stock alert for a product")
+}

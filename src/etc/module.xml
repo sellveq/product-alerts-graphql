@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+
+<!--
+/**
+ * @category    ScandiPWA
+ * @package     ScandiPWA_ProductAlertsGraphQl
+ * @copyright   Copyright © 2021 Scandiweb, Ltd (https://scandiweb.com)
+ * @copyright   Modifications © Selveq. All rights reserved.
+ * @license     OSL-3.0 (Open Software License ("OSL") v. 3.0)
+ * See LICENSE for license details.
+ */
+-->
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="urn:magento:framework:Module/etc/module.xsd">
+    <module name="ScandiPWA_ProductAlertsGraphQl">
+        <sequence>
+            <module name="Magento_ProductAlert" />
+            <module name="Magento_GraphQl" />
+            <module name="Magento_Catalog" />
+            <module name="Magento_Store" />
+        </sequence>
+    </module>
+</config>
